@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Progress Bar</title>
+  <style>
+    body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .progress-wrapper {
+      width: 80%;
+      max-width: 500px;
+      background-color: #2c2c2c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+    }
+
+    .progress-bar {
+      height: 30px;
+      width: 0%; /* Set progress here */
+      background: linear-gradient(90deg, #00ff99, #00ccff);
+
+    }
+
+    .progress-text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #00ffcc;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div id="#hide">
+    <div class="progress-wrapper">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="progress-text">Downloading... <span class="percentage-text">70%</span></div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
